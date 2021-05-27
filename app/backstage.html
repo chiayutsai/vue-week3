@@ -195,7 +195,7 @@
                           上傳中...
                         </button>
                         <label v-else class="btn btn-secondary text-sm text-white">
-                          <input style="display: none" type="file" @change="uploadImage('main')" />
+                          <input style="display: none" type="file" @change="uploadImage('main',$event)" />
                           <span class="material-icons text-base align-text-bottom"> file_upload </span> 上傳圖片
                         </label>
                       </div>
@@ -224,7 +224,7 @@
                           上傳中...
                         </button>
                         <label v-else class="d-block btn btn-secondary text-sm text-white mb-4">
-                          <input style="display: none" type="file" @change="uploadImage(key)" />
+                          <input style="display: none" type="file" @change="uploadImage(key,$event)" />
                           <span class="material-icons text-base align-text-bottom"> file_upload </span> 上傳圖片
                         </label>
 
