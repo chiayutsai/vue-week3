@@ -206,9 +206,9 @@ const app = {
           console.log(err)
         })
     },
-    uploadImage(key) {
-      const e = window.event
+    uploadImage(key, e) {
       const file = e.target.files[0]
+
       const formData = new FormData()
       formData.append('file-to-upload', file)
       if (key === 'main') {
